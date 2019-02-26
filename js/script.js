@@ -24,7 +24,12 @@ var BuildWallGrid = function() {
 
   if (Object.keys(WallContents).length == 0) {
     $(".wall-grid-cell").unbind();
-    $("#wall-grid").html("");
+    WallRow = '<div class="wall-grid-row">';
+    WallCell = '<div class="wall-grid-cell"></div>';
+
+    RowMarkup = '<div class="wall-grid-row">';
+    GridMarkup = "";
+
 
     for (var i = 1; i <= ColumnCount; i++) {
         RowMarkup += WallCell;

@@ -1,0 +1,38 @@
+body {
+}
+
+.icon-menu {
+  height: 100px;
+}
+
+.icon-menu .icon {
+  cursor: pointer;
+}
+
+.icon-menu .selected {
+  border: 1px solid red;
+}
+
+.wall-grid {
+  min-width: 100px;
+  min-height: 1000px;
+  width: 100%;
+  height: 100%;
+}
+
+.wall-grid-row {
+  width: 100%;
+  height: 10%;
+  min-height: 50px;
+}
+.wall-grid-cell {
+  height: 100%;
+  width: 10%;
+  min-width: 50px;
+  min-height: 50px;
+  display: inline-block;
+  cursor: pointer;
+  background-image: url("../images/baseline-add_circle-24px.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

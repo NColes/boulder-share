@@ -11,196 +11,34 @@
     <script src="./js/script.js"></script>
   </head>
   <body>
+    <div class="wall-menu">
+      <label for="Rows">Wall rows</label>
+      <input type="number" name="Rows" value="4" class="wall-rows">
+      <label for="Columns">Columns</label>
+      <input type="number" name="Columns" value="4" class="wall-columns">
+      <button type="button" name="BuildWall" onclick="BuildWallGrid()">Build that wall</button>
+    </div>
     <div class="icon-menu">
       <h2>Select piece</h2>
-      <img src="./images/circle.png" alt="" class="icon">
-      <img src="./images/square.png" alt="" class="icon">
-      <img src="./images/triangle.png" alt="" class="icon">
-      <img src="./images/jug.png" alt="" class="icon">
+      <img src="./images/holds/a.JPG" alt="" class="icon">
+      <img src="./images/holds/b.JPG" alt="" class="icon">
+      <img src="./images/holds/c.JPG" alt="" class="icon">
+      <img src="./images/holds/d.JPG" alt="" class="icon">
+      <img src="./images/holds/e.JPG" alt="" class="icon">
+      <img src="./images/holds/f.JPG" alt="" class="icon">
+      <img src="./images/holds/g.JPG" alt="" class="icon">
+      <img src="./images/holds/h.JPG" alt="" class="icon">
+      <img src="./images/holds/i.JPG" alt="" class="icon">
+      <img src="./images/holds/j.JPG" alt="" class="icon">
+      <img src="./images/holds/k.JPG" alt="" class="icon">
+      <img src="./images/holds/l.JPG" alt="" class="icon">
       <br>
       <img src="./images/baseline-delete_outline-24px.svg" alt="" class="icon-remove icon">
     </div>
-    <h2>Wall</h2>
-    <div class="wall-grid">
-      <div class="wall-grid-row">
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-      </div>
-      <div class="wall-grid-row">
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-      </div>
-      <div class="wall-grid-row">
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-      </div>
-      <div class="wall-grid-row">
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-      </div>
-      <div class="wall-grid-row">
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-      </div>
-      <div class="wall-grid-row">
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-      </div>
-      <div class="wall-grid-row">
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-      </div>
-      <div class="wall-grid-row">
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-      </div>
-      <div class="wall-grid-row">
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
-        <div class="wall-grid-cell">
-        </div>
+    <div class="wall-grid-wrapper">
+      <h2>Wall</h2>
+      <button type="button" name="ClearWall" onclick="ClearWall()">Clear wall</button>
+      <div id="wall-grid" class="wall-grid">
       </div>
     </div>
   </body>
